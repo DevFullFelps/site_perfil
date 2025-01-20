@@ -1,0 +1,155 @@
+/* 1. Estilo global para a Navbar */
+
+.navbar{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #0f1a1a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+    border: solid 2px #253d3d;
+    box-shadow: inset;
+}
+
+/* 2. Estilo para o Header (imagem e nome) */
+.navbar-header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.navbar-image{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border-style: groove;
+    border-color: #128c7e;
+    border-width: 8px;
+    cursor:auto;
+}
+
+.navbar-name{
+    font-size: 24px;
+    font-weight: bold;
+    cursor:auto;
+}
+
+/* 3. Estilo para os links */
+.navbar-link ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-link li{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.navbar-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    
+}
+
+.navbar-link a:hover{
+    color: #128c7e;
+}
+
+/* 4. Estilo para o botão WhatsApp */
+.navbar-whatsapp{
+    text-align: center;
+}
+
+.whatsapp-button{
+    background-color: #25D366;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 25px;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover{
+    background-color: #128c7e;
+}
+
+/* 5. Estilo para as logos de contato */
+.navbar-footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.navbar-footer li{
+    margin-bottom: 15px;
+    padding: 0px 10px;
+}
+.navbar-footer a i {
+    margin-right: 10px; 
+    font-size: 15px; 
+    transition: color 0.3s ease;
+}
+
+.navbar-footer a i:hover{
+    color:#128c7e;
+}
+
+.navbar-footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+/* 6. Responsividade para telas menores (mobile) */
+@media (max-width: 768px) {
+    .navbar {
+      width: 100%; 
+      height: auto; 
+      position: relative;
+    }
+  
+    .navbar-header {
+      display: none; 
+    }
+  
+    .navbar-links ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-links li {
+      margin: 10px 0; 
+    }
+  
+    .navbar-footer {
+      display: none; 
+    }
+  
+    .navbar-whatsapp {
+      margin-top: 10px;
+    }
+  
+    
+    .hamburger {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 30px;
+      cursor: pointer;
+    }
+  }
