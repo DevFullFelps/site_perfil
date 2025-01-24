@@ -6,10 +6,16 @@ const Navbar = () =>{
         <nav className='navbar'>
             {/* Seção da imagem e nome */}
             <section className='navbar-header'> 
-                <img src='../perfil_iguana.jpg' alt='Logo' className='navbar-image'/>
+                <div className='navbar-image-container'>
+                    <img src='../perfil_iguana.jpg' alt='Logo' className='navbar-image'/>
+                    <div class="loader">
+                        <svg viewBox="0 0 80 80">
+                            <circle r="32" cy="40" cx="40"></circle>
+                        </svg>
+                    </div>
+                </div>
                 <div className='navbar-name'>Felipe Adriano</div>
             </section>
-            
             {/* Links de navegação */}
             <section className='navbar-link'>
                 <ul>
@@ -23,15 +29,13 @@ const Navbar = () =>{
             <section className='navbar-whatsapp'>
                 <a href='https://wa.me/seu-numerodo-whatsapp' className='whatsapp-button'>Chamar no WhatsApp</a>
             </section>
-            
             {/* Seção das Logos */}
             <section className='navbar-footer'>
                 <ul>
-                <li><a href="https://github.com/seu-perfil"><i className="fab fa-github"></i> </a></li>
-        <li><a href="https://www.linkedin.com/in/seu-perfil"><i className="fab fa-linkedin"></i> </a></li>
-        <li><a href="https://www.instagram.com/seu-perfil"><i className="fab fa-instagram"></i> </a></li>
-        <li><a href="https://twitter.com/seu-perfil"><i className="fab fa-twitter"></i></a></li>
-   
+                    <li><a href="https://github.com/seu-perfil"><i className="fab fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/seu-perfil"><i className="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/seu-perfil"><i className="fab fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/seu-perfil"><i className="fab fa-twitter"></i></a></li>
                 </ul>
             </section> 
         </nav>
