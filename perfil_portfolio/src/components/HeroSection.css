@@ -1,34 +1,54 @@
-.hero-container{
+.hero-container {
     position: relative;
-    width: 100%;
-    height: 100vh;
+    margin-left: 250px; /* Considera o espaço da navbar */
+    height: 100vh; /* A altura da seção */
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 8, 6, 0.555); /* Escurece a imagem */
+    z-index: -1; /* Fica atrás do conteúdo da hero */
+}
 
-.hero-background{
+.hero-background {
     position: absolute;
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    filter: blur(10px);
-    z-index: -1;
+    z-index: -2;
 }
 
-.hero-content{
+/* Overlay escuro */
+.hero-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade para escurecer mais ou menos */
+    z-index: -2;
+}
+
+.hero-content {
     color: white;
     text-align: center;
     z-index: 1;
 }
-
 .hero-welcome{
     font-size: 25px;
     margin-bottom: 20px;
 }
 
 .hero-title{
+    
     font-size: 48px;
     font-weight: bold;
 }
@@ -50,4 +70,34 @@
 @keyframes blink {
     from { opacity: 1; }
     to { opacity: 0; }
+}
+
+/* Estilo da seta */
+.scroll-down {
+    position: absolute; /* Faz a seta se posicionar em relação à hero-container */
+    bottom: 30px; /* Distância do fundo da hero-section */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza a seta horizontalmente */
+    cursor: pointer;
+}
+
+.arrow {
+    border: solid 3px transparent;
+    border-top: 10px solid white;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    animation: bounce 1.5s infinite;
+}
+
+/* Animação de movimento da seta */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
 }
