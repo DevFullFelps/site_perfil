@@ -1,4 +1,3 @@
-/* Navbar */
 .navbar {
   position: fixed;
   top: 0;
@@ -17,32 +16,38 @@
   z-index: 1000;
 }
 
+.navbar-header, .navbar-link, .navbar-footer, .navbar-whatsapp {
+  text-align: center;  /* Ajusta o texto para ficar centralizado na vertical */
+}
 .navbar-expanded {
   width: 100%;
   height: auto;
 }
 
-/* Cabeçalho da navbar */
 .navbar-header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  justify-content: center;
+  text-align: center;
+  height: 20%;
 }
 
 .navbar-image-container {
   position: relative;
   display: flex;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
   width: 170px;
   height: 170px;
+  padding-bottom: 30px;
+
 }
 
 .navbar-image {
-  width: 100%;
-  height: 100%;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   border-style: solid;
   border-color: #0c504875;
@@ -54,14 +59,18 @@
   border-color: #0df0d575;
 }
 
-/* Nome */
 .navbar-name {
   font-size: 24px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 0px;
+  padding-bottom: 100px;
 }
 
-/* Links de navegação */
+.navbar-name-small {
+  display: block;
+}
+
+
 .navbar-link ul {
   list-style: none;
   padding: 0;
@@ -84,7 +93,6 @@
   color: #128c7e;
 }
 
-/* Botão do WhatsApp */
 .navbar-whatsapp {
   text-align: center;
 }
@@ -104,7 +112,6 @@
   background-color: #128c7e;
 }
 
-/* Seção de redes sociais */
 .navbar-footer ul {
   list-style: none;
   display: flex;
@@ -131,7 +138,6 @@
   font-size: 20px;
 }
 
-/* Ícone de hambúrguer */
 .hamburger {
   display: none;
   position: absolute;
@@ -145,7 +151,7 @@
   width: 30px;
   height: 3px;
   background-color: white;
-  margin: 6px 0;
+  margin: 6px 30px;
   transition: all 0.3s ease;
 }
 
@@ -161,7 +167,6 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Dropdown para telas menores */
 .dropdown-menu {
   display: flex;
   flex-direction: column;
@@ -175,10 +180,11 @@
   padding: 0;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   transition: max-height 0.3s ease, padding 0.3s ease;
+  border: solid 2px #253d3d;
 }
 
 .dropdown-menu.open {
-  max-height: 300px; /* Ajuste conforme necessário */
+  max-height: 300px;
   padding: 20px 0;
 }
 
@@ -203,59 +209,74 @@
   color: #128c7e;
 }
 
-/* Esconde elementos para telas maiores */
+.hamburger-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: #0f1a1a;
+  height: 60px;
+}
+
 @media (min-width: 769px) {
-  .dropdown-menu,
-  .hamburger {
+  .dropdown-menu, .hamburger {
     display: none;
   }
-}
-
-/* Navbar completa para telas maiores */
-@media (min-width: 769px) {
-  .navbar {
-    width: 250px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .navbar-header,
-  .navbar-link,
-  .navbar-whatsapp {
+  .navbar-name {
     display: block;
   }
-
-  .navbar-footer {
-    display: flex;
-    justify-content: center;
+  .navbar-name-small {
+    display: none;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0px;
   }
-}
 
-/* Responsividade para telas menores */
+}
 @media (max-width: 768px) {
   .navbar {
-    width: 100%;
-    height: auto;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    width: 100%; /* A largura é 100% na tela pequena */
+    height: auto; /* Ajuste da altura */
+    flex-direction: row; /* Navbar horizontal */
     padding: 10px 20px;
+    border-top: none;
+    justify-content: space-between; /* Disposição dos itens */
+  }
+  .navbar-header, .navbar-link, .navbar-image, .navbar-image-container, .navbar-name, .navbar-whatsapp {
+    display: none; /* Oculta as seções verticais */
+  }
+  .navbar-name-small {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
   }
 
-  .navbar-header,
-  .navbar-link,
-  .navbar-whatsapp {
+  .navbar-header, .navbar-link, .navbar-whatsapp{
     display: none;
+    width: 100%;
+    margin-top: 10px;
   }
 
-  .navbar-footer {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  .navbar-footer ul {
+    justify-content: center;
+    margin-right: 130px;
+  }
+
+  .navbar-footer li {
+    padding: 0px 5px;
   }
 
   .hamburger {
     display: block;
+    margin: 0 50px;
   }
+
+  .whatsapp-button {
+    display: block;
+    margin: 0 auto;
+    width: 210px;
+    text-align: center;
+  }
+
 }

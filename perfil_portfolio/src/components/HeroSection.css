@@ -1,3 +1,4 @@
+/* Hero Section */
 .hero-container {
     position: relative;
     margin-left: 250px; /* Considera o espaço da navbar */
@@ -7,6 +8,7 @@
     align-items: center;
     overflow: hidden;
 }
+
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -20,8 +22,8 @@
 .hero-background {
     position: absolute;
     width: 100%;
-    height: 100vh;
-    object-fit: cover;
+    height: 100vh; /* Garante que ocupe 100% da altura da tela */
+    object-fit: cover; /* Ajusta a imagem para cobrir toda a área */
     z-index: -2;
 }
 
@@ -41,35 +43,17 @@
     color: white;
     text-align: center;
     z-index: 1;
+    padding: 0 20px; /* Adiciona padding nas laterais */
 }
-.hero-welcome{
+
+.hero-welcome {
     font-size: 25px;
     margin-bottom: 20px;
 }
 
-.hero-title{
-    
+.hero-title {
     font-size: 48px;
     font-weight: bold;
-}
-
-.typed-text{
-    border-right: .1em solid #fff;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-.cursor{
-    display: inline-block;
-    background-color: white;
-    width: 3px;
-    margin-left: 2px;
-    animation: blink 0.7s steps(1) infinite;
-}
-
-@keyframes blink {
-    from { opacity: 1; }
-    to { opacity: 0; }
 }
 
 /* Estilo da seta */
@@ -99,5 +83,65 @@
     }
     50% {
         transform: translateY(10px);
+    }
+}
+
+/* Responsividade */
+
+/* Para telas grandes, mantém o layout atual */
+@media (min-width: 1024px) {
+    .hero-container {
+        margin-left: 250px; /* Considera o espaço da navbar */
+    }
+    .hero-title {
+        font-size: 48px;
+    }
+}
+
+/* Para telas médias (tablets) */
+@media (max-width: 1024px) {
+    .hero-container {
+        margin-left: 0; /* Ajusta para telas menores */
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-welcome {
+        font-size: 22px;
+    }
+}
+
+/* Para telas pequenas (smartphones) */
+@media (max-width: 768px) {
+    .hero-container {
+        height: 100vh; /* Mantém 100vh para a hero */
+    }
+
+    .hero-background {
+        height: 100vh; /* Garante que a imagem ocupe 100vh */
+    }
+
+    .hero-title {
+        font-size: 38px;
+    }
+
+    .hero-welcome {
+        font-size: 20px;
+    }
+
+    .scroll-down {
+        bottom: 20px; /* Ajusta a posição da seta */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 30px; /* Tamanho da fonte menor em telas muito pequenas */
+    }
+
+    .hero-welcome {
+        font-size: 18px;
     }
 }
