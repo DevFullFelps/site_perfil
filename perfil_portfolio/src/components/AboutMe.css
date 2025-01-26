@@ -144,6 +144,8 @@
     color: white;
     border: none;
     padding: 10px 20px;
+    text-align: center;
+    align-items: center;
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
@@ -157,6 +159,7 @@
     background-color: #128C7E;
 }
 /* Adaptações para telas menores */
+/* Adaptações para telas menores que 1024px */
 @media (max-width: 1024px) {
     .about-me-container {
         padding-left: 20px; /* Reduz o espaçamento em telas menores */
@@ -166,27 +169,30 @@
     .about-me-details {
         flex-direction: column; /* Empilha os elementos verticalmente */
         text-align: center;
+        margin-top: 20px; /* Ajusta o espaçamento entre os elementos */
     }
 
     .about-me-details h3 {
-        font-size: 20px; /* Reduz o tamanho do texto */
+        font-size: 20px; /* Ajusta o tamanho do texto */
         margin-right: 0; /* Remove o espaço à direita */
     }
 
     .about-me-table {
-        margin-left: 0; /* Remove o espaço à esquerda */
-        max-width: 100%; /* Garante que a tabela ocupe toda a largura */
+        margin-left: 0;
+        margin-right: 0; /* Garantir que a tabela ocupe toda a largura */
+        max-width: 100%; /* Ajusta a tabela para a largura total */
+        width: 100%; /* Garantir que a tabela ocupe a tela inteira */
     }
 
     .about-me-table tr {
-        width: 100%; /* Ajusta a largura das linhas */
+        width: 100%; /* Ajuste a largura para 100% */
         display: block; /* Cada linha fica em uma linha separada */
     }
 
     .about-me-table td {
         width: 100%; /* As células ocupam 100% da largura */
-        padding: 10px 0; /* Ajusta o espaçamento */
-        text-align: center; /* Centraliza o texto */
+        padding: 10px 0; /* Ajuste o espaçamento das células */
+        text-align: center; /* Centraliza o conteúdo nas células */
     }
 
     .about-me-title {
@@ -198,7 +204,7 @@
     }
 
     .about-me-table button {
-        width: 100%; /* O botão ocupa toda a largura */
+        width: 100%; /* Botão ocupa toda a largura */
         padding: 12px 0; /* Ajusta o espaçamento dentro do botão */
     }
 }
@@ -211,29 +217,22 @@
     }
 
     .about-me-details {
-        margin-top: 20px;
         flex-direction: column; /* Empilha os itens */
         text-align: center; /* Centraliza o conteúdo */
     }
 
-    .about-me-title {
-        font-size: 24px; /* Menor título para telas pequenas */
-    }
-
-    .about-me-hidden-title {
-        font-size: 60px; /* Reduz mais o título de fundo */
-    }
-
-    .about-me-text {
-        font-size: 14px; /* Ajusta o tamanho do texto */
-    }
-
     .about-me-table {
+        margin-left: 0;
         max-width: 100%;
     }
 
+    .about-me-table td {
+        padding: 12px; /* Mais espaçamento nas células */
+        text-align: center;
+    }
+
     .about-me-table button {
-        padding: 10px 0; /* Ajusta o padding */
-        font-size: 14px; /* Ajuste na fonte */
+        width: 100%; /* O botão ocupa toda a largura */
+        padding: 12px 0; /* Ajusta o espaçamento do botão */
     }
 }

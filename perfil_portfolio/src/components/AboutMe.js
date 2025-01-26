@@ -26,7 +26,7 @@ const AboutMe = () => {
                                     <td><span>Nome:</span> Felipe Adriano</td>
                                 </tr>
                                 <tr>
-                                 <td><span>Email:</span> felipe@example.com</td>
+                                 <td><span>Email:</span> devfullfelps@gmail.com</td>
                                 </tr>
                              <tr>
                                  <td><span>Idade:</span> 22</td>
