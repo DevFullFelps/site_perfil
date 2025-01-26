@@ -64,7 +64,7 @@
   border-radius: 50%;
   border-width: 8px;
   transition: all 0.3s ease;
-  box-shadow: 2px 2px 5px #06413a8c;
+  box-shadow: 2px 2px 5px #00000075;
 }
 
 .navbar-image:hover {
