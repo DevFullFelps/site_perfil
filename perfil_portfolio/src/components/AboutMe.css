@@ -1,11 +1,11 @@
 /* AboutMe.css */
 .about-me-container {
     position: relative;
-    height: 100vh; /* Isso pode estar causando o corte do conteúdo */
+    height: auto;
     background-color: #090C08;
-    padding-left: 250px;
-    padding-top: 100px;
-    overflow: visible; /* Permite que o conteúdo ultrapasse os limites */
+    overflow: hidden;
+    padding: 100px 20px 20px 250px;
+
 }
 
 /* Sobreposição escura no fundo */
@@ -23,7 +23,7 @@
     position: relative;
     text-align: center;
     color: white;
-    z-index: 15;
+    z-index: 5;
 }
 
 .about-me-title {
@@ -210,7 +210,7 @@
 }
 
 /* Adaptações para telas menores que 768px (smartphones) */
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .about-me-container {
         padding-left: 10px; /* Menos padding para telas pequenas */
         padding-top: 60px; /* Ajuste no padding superior */
