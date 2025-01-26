@@ -156,3 +156,84 @@
 .about-me-table button:hover {
     background-color: #128C7E;
 }
+/* Adaptações para telas menores */
+@media (max-width: 1024px) {
+    .about-me-container {
+        padding-left: 20px; /* Reduz o espaçamento em telas menores */
+        padding-top: 80px; /* Ajusta o espaçamento superior */
+    }
+
+    .about-me-details {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        text-align: center;
+    }
+
+    .about-me-details h3 {
+        font-size: 20px; /* Reduz o tamanho do texto */
+        margin-right: 0; /* Remove o espaço à direita */
+    }
+
+    .about-me-table {
+        margin-left: 0; /* Remove o espaço à esquerda */
+        max-width: 100%; /* Garante que a tabela ocupe toda a largura */
+    }
+
+    .about-me-table tr {
+        width: 100%; /* Ajusta a largura das linhas */
+        display: block; /* Cada linha fica em uma linha separada */
+    }
+
+    .about-me-table td {
+        width: 100%; /* As células ocupam 100% da largura */
+        padding: 10px 0; /* Ajusta o espaçamento */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .about-me-title {
+        font-size: 28px; /* Ajusta o tamanho da fonte */
+    }
+
+    .about-me-hidden-title {
+        font-size: 80px; /* Reduz o tamanho do título de fundo */
+    }
+
+    .about-me-table button {
+        width: 100%; /* O botão ocupa toda a largura */
+        padding: 12px 0; /* Ajusta o espaçamento dentro do botão */
+    }
+}
+
+/* Adaptações para telas menores que 768px (smartphones) */
+@media (max-width: 768px) {
+    .about-me-container {
+        padding-left: 10px; /* Menos padding para telas pequenas */
+        padding-top: 60px; /* Ajuste no padding superior */
+    }
+
+    .about-me-details {
+        margin-top: 20px;
+        flex-direction: column; /* Empilha os itens */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    .about-me-title {
+        font-size: 24px; /* Menor título para telas pequenas */
+    }
+
+    .about-me-hidden-title {
+        font-size: 60px; /* Reduz mais o título de fundo */
+    }
+
+    .about-me-text {
+        font-size: 14px; /* Ajusta o tamanho do texto */
+    }
+
+    .about-me-table {
+        max-width: 100%;
+    }
+
+    .about-me-table button {
+        padding: 10px 0; /* Ajusta o padding */
+        font-size: 14px; /* Ajuste na fonte */
+    }
+}
