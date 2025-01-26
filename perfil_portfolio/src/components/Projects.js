@@ -4,20 +4,20 @@ const projectsData = [
     {
         id: 1,
         title: "Formulário Cadastro",
-        description: "Sistema Web",
-        image: "../pasta_projetos/p_formulario.png"
+        description: "Web | Front-end",
+        image: "../pasta_projetos/p_formulario2.png"
     },
     {
         id: 2,
         title: "CETI Commerce",
-        description: "Sistema Web",
-        image: "../pasta_projetos/p_ceti.png"
+        description: "Web | Front-end",
+        image: "../pasta_projetos/p_ceti2.png"
     },
     {
         id: 3,
-        title: "Meu Projeto 3",
-        description: "Descrição breve do projeto 3.",
-        image: "url_da_imagem_3"
+        title: "Capa Goblin COC",
+        description: "Web | Front-end",
+        image: "../pasta_projetos/p_goblin2.png"
     },
 ];
 
