@@ -1,11 +1,11 @@
 /* AboutMe.css */
 .about-me-container {
     position: relative;
-    height: 80vh;
+    height: 100vh; /* Isso pode estar causando o corte do conteúdo */
     background-color: #090C08;
-    overflow: hidden;
-    padding-left: 250px; /* Ajuste conforme a largura da sua navbar */
+    padding-left: 250px;
     padding-top: 100px;
+    overflow: visible; /* Permite que o conteúdo ultrapasse os limites */
 }
 
 /* Sobreposição escura no fundo */
@@ -23,7 +23,7 @@
     position: relative;
     text-align: center;
     color: white;
-    z-index: 5;
+    z-index: 15;
 }
 
 .about-me-title {
