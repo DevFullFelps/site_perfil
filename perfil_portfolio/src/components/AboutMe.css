@@ -2,6 +2,7 @@
 .about-me-container {
     position: relative;
     height: auto;
+    min-height: 80vh;
     background-color: #090C08;
     overflow: hidden;
     padding: 100px 20px 20px 250px;
