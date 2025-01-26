@@ -3,9 +3,9 @@ import './Projects.css';
 const projectsData = [
     {
         id: 1,
-        title: "Meu Projeto 1",
-        description: "Descrição breve do projeto 1.",
-        image: "url_da_imagem_1"
+        title: "Formulário Cadastro",
+        description: "Sistema Web",
+        image: "../fundo_formulario.png"
     },
     {
         id: 2,
