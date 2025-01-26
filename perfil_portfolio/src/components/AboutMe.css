@@ -1,0 +1,158 @@
+/* AboutMe.css */
+.about-me-container {
+    position: relative;
+    height: 80vh;
+    background-color: #090C08;
+    overflow: hidden;
+    padding-left: 250px; /* Ajuste conforme a largura da sua navbar */
+    padding-top: 100px;
+}
+
+/* Sobreposição escura no fundo */
+.about-me-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.514);
+    z-index: -1;
+}
+
+.about-me-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 5;
+}
+
+.about-me-title {
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    z-index: 2;
+    display: inline-block;
+    position: relative;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    padding-bottom: 5px;
+}
+
+.about-me-title::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    border-bottom: 3px solid #0E7C70;
+}
+
+/* Título de fundo */
+.about-me-hidden {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.15;
+    z-index: 1;
+}
+
+.about-me-hidden-title {
+    font-size: 130px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    color: #233a3a;
+}
+
+/* Detalhes sobre mim */
+.about-me-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+    margin-top: 40px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Título e descrição */
+.about-me-details h3 {
+    font-size: 24px;
+    margin-right: 30px;
+}
+
+.about-me-details span {
+    color: #0E7C70;
+}
+
+.about-me-details p {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* Tabela de informações */
+.about-me-table {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 40px;
+    max-width: 500px; /* Aumenta o tamanho da tabela */
+    margin-left: 10%;
+    margin-right: auto; 
+
+}
+
+/* Estilo da tabela, com bordas em todas as células */
+.about-me-table table {
+    width: 100%;
+    border-collapse: collapse; /* Faz com que as bordas não se sobreponham */
+    
+}
+
+/* Remover a flexibilidade do tbody e deixar os itens na mesma linha */
+.about-me-table tbody {
+    display: block; /* Permite que as linhas sejam tratadas como bloco */
+}
+
+/* Células da tabela - todas as células têm bordas */
+.about-me-table tr {
+    display: flex; /* Deixa as células lado a lado */
+    justify-content: space-between;
+    width: 400%; /* As células se estendem pela largura da tabela */
+    padding: 10px;
+}
+
+.about-me-table td {
+    padding: 10px 15px; /* Ajusta o espaçamento dentro das células */
+    text-align: left;
+    border-bottom: 1px solid rgba(83, 81, 81, 0.452);
+    width: 33%; /* Distribui as células igualmente na linha */
+}
+
+/* Estilo das labels dentro das células */
+.about-me-table td span {
+    font-weight: bold;
+    color: #0E7C70;
+}
+
+/* Botão WhatsApp */
+.about-me-table button {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    max-width: 200px;
+    margin-top: 20px;
+    margin-left: auto;
+}
+
+.about-me-table button:hover {
+    background-color: #128C7E;
+}

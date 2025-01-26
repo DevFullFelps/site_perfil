@@ -1,0 +1,114 @@
+/* Projects.css */
+.projects-container {
+    position: relative;
+    height: auto; /* Permite ajuste automático da altura conforme os projetos */
+    background-color: #0f1a1ae8;
+    overflow: hidden;
+    padding-left: 250px; /* Ajuste conforme a largura da sua navbar */
+    padding-top: 100px;
+    padding-bottom: 50px; /* Espaçamento extra no final */
+}
+
+/* Sobreposição escura no fundo */
+.projects-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.514);
+    z-index: -1;
+}
+
+.projects-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 5;
+}
+
+/* Título principal */
+.projects-title {
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    z-index: 2;
+    display: inline-block;
+    position: relative;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    padding-bottom: 5px;
+}
+
+.projects-title::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    border-bottom: 3px solid #0E7C70;
+}
+
+/* Título de fundo */
+.projects-hidden {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.15;
+    z-index: 1;
+}
+
+.projects-hidden-title {
+    font-size: 130px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    color: #264141;
+}
+
+/* Seção de projetos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 50px auto 0;
+    padding: 0 20px;
+}
+
+.project-card {
+    position: relative;
+    background-color: #0E7C70;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card-content {
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.project-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.project-card-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #d4d4d4;
+}

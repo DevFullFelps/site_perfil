@@ -3,9 +3,9 @@ import Typewriter from 'typewriter-effect';
 import './HeroSection.css';
 
 const HeroSection = () => {
-    const scrollToContent = () => {
-        const content = document.getElementById('content');
-        content.scrollIntoView({ behavior: 'smooth' });
+    const scrollToAboutMe = () => {
+        const aboutMeSection = document.getElementById('about-me');
+        aboutMeSection.scrollIntoView({ behavior: 'smooth' });
     };
 
     return (
@@ -25,7 +25,7 @@ const HeroSection = () => {
                         }}
                     />
                 </h1>
-                <div className="scroll-down" onClick={scrollToContent}>
+                <div className="scroll-down" onClick={scrollToAboutMe}>
                     <div className="arrow"></div>
                 </div>
             </div>
