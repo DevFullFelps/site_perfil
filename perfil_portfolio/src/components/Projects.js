@@ -5,13 +5,13 @@ const projectsData = [
         id: 1,
         title: "Formulário Cadastro",
         description: "Sistema Web",
-        image: "../fundo_formulario.png"
+        image: "../pasta_projetos/p_formulario.png"
     },
     {
         id: 2,
-        title: "Meu Projeto 2",
-        description: "Descrição breve do projeto 2.",
-        image: "url_da_imagem_2"
+        title: "CETI Commerce",
+        description: "Sistema Web",
+        image: "../pasta_projetos/p_ceti.png"
     },
     {
         id: 3,
