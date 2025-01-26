@@ -1,0 +1,123 @@
+.contact-container {
+    position: relative;
+    height: auto;
+    background-color: #070A08;
+    overflow: hidden;
+    padding-left: 250px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+/* Sobreposição escura no fundo */
+.contact-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.514);
+    z-index: -1;
+}
+
+.contact-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+
+    z-index: 2;
+}
+
+/* Título principal */
+.contact-title {
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    z-index: 2;
+    display: inline-block;
+    position: relative;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    padding-bottom: 5px;
+}
+
+.contact-title::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    border-bottom: 3px solid #0E7C70; /* Cor de destaque */
+}
+
+.contact-hidden {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.contact-hidden-title {
+    font-size: 130px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    color: #879c9c8c;;
+}
+
+.contact-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 30px;
+}
+.contact-info {
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.contact-item {
+    margin-bottom: 10px;
+}
+
+.contact-item-initial {
+    font-weight: bold;
+    color:#0E7C70;
+}
+
+.contact-subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0E7C70;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 1px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0E7C70;
+}
+
+.contact-action {
+    margin-top: 40px;
+}
+
+

@@ -29,11 +29,11 @@ const AboutMe = () => {
                                  <td><span>Email:</span> felipe@example.com</td>
                                 </tr>
                              <tr>
-                                 <td><span>Idade:</span> 25</td>
+                                 <td><span>Idade:</span> 22</td>
                                 </tr>
                          </tbody>
                         </table>
-                     <button className='whatsapp-button'>Enviar via WhatsApp</button>
+                        <a className='whatsapp-button' href="https://wa.me/47984318419?text=Olá,                 %20gostaria%20de%20falar%20com%20Felipe%20Adriano!" target="_blank" rel="noopener noreferrer"> Enviar via WhatsApp</a>
                     </div>
                 </div>
                 

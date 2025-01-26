@@ -1,0 +1,21 @@
+.footer-container {
+    position: relative;
+    height: 5vh;
+    background-color: #252F2F;
+    overflow: hidden;
+    padding-left: 260px; /* Ajuste conforme a largura da sua navbar */
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-text{
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.footer-span{
+    font-weight: bold;
+    font-size: 17px;
+    color: #0E7C70;
+}

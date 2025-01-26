@@ -52,10 +52,10 @@ const Navbar = () => {
 
             <section className="navbar-footer">
                 <ul>
-                    <li><a href="https://github.com/seu-perfil"><i className="fab fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/seu-perfil"><i className="fab fa-linkedin"></i></a></li>
-                    <li><a href="https://www.instagram.com/seu-perfil"><i className="fab fa-instagram"></i></a></li>
-                    <li><a href="https://twitter.com/seu-perfil"><i className="fab fa-twitter"></i></a></li>
+                    <li><a href="https://github.com/DevFullFelps"><i className="fab fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/felipe-adriano-967b89312/?jobid=1234"><i className="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/devfelps/"><i className="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61564205696353"><i className="fab fa-facebook"></i></a></li>
                 </ul>
             </section>
         </nav>
