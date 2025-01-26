@@ -19,3 +19,36 @@
     font-size: 17px;
     color: #0E7C70;
 }
+
+/* Responsividade para o footer */
+@media (max-width: 768px) {
+    .footer-container {
+        height: auto; /* Permite que o footer ajuste a altura automaticamente */
+        padding-left: 20px; /* Reduz o preenchimento lateral */
+        padding-top: 10px; /* Ajusta o preenchimento superior */
+        text-align: center; /* Centraliza o texto para telas menores */
+    }
+
+    .footer-text {
+        font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+
+    .footer-span {
+        font-size: 15px; /* Ajusta o tamanho do texto em destaque */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding-left: 10px; /* Ainda menos preenchimento lateral */
+        padding-top: 5px; /* Ajuste para smartphones */
+    }
+
+    .footer-text {
+        font-size: 12px; /* Fonte menor para telas pequenas */
+    }
+
+    .footer-span {
+        font-size: 13px; /* Texto em destaque ainda menor */
+    }
+}

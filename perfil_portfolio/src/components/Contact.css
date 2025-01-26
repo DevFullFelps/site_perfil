@@ -119,5 +119,65 @@
 .contact-action {
     margin-top: 40px;
 }
+@media (max-width: 768px) {
+    .contact-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
 
+    .contact-title {
+        font-size: 32px; /* Reduz o tamanho do título */
+    }
 
+    .contact-hidden-title {
+        font-size: 100px; /* Ajuste para o título de fundo */
+    }
+
+    .contact-layout {
+        flex-direction: column; /* Empilha os elementos em vez de alinhá-los lado a lado */
+        gap: 20px; /* Reduz o espaçamento entre os itens */
+    }
+
+    .contact-info {
+        font-size: 16px; /* Fonte menor */
+    }
+
+    .contact-item {
+        margin-bottom: 8px; /* Reduz o espaçamento */
+    }
+
+    .social-icons {
+        gap: 10px; /* Reduz o espaçamento entre os ícones */
+    }
+
+    .whatsapp-button {
+        font-size: 14px; /* Fonte menor no botão */
+        padding: 8px 15px; /* Reduz o tamanho do botão */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-title {
+        font-size: 28px; /* Ainda menor para telas muito pequenas */
+    }
+
+    .contact-hidden-title {
+        font-size: 80px;
+    }
+
+    .contact-item {
+        font-size: 14px; /* Fonte menor ainda */
+    }
+
+    .social-icons svg {
+        width: 25px; /* Reduz tamanho dos ícones */
+        height: 25px;
+    }
+
+    .whatsapp-button {
+        font-size: 12px;
+        padding: 6px 10px; /* Botão mais compacto */
+    }
+}

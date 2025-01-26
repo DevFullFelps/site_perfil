@@ -14,6 +14,19 @@
   transition: all 0.3s ease;
   border: solid 2px #253d3d;
   z-index: 1000;
+  animation: navbarFadeIn 0.5s forwards;
+  opacity: 0;
+
+
+}
+
+@keyframes navbarFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .navbar-header, .navbar-link, .navbar-footer, .navbar-whatsapp {
@@ -89,6 +102,15 @@
   transition: color 0.3s ease;
 }
 
+.navbar-link a.active, .dropdown-menu a.active {
+  color: #128c7e; /* Cor de destaque */
+  font-weight: bold;
+}
+
+/* Para links no modo dropdown */
+.dropdown-menu a.active {
+  color: #128c7e; /* Alterar a cor do link ativo */
+}
 .navbar-link a:hover {
   color: #128c7e;
 }

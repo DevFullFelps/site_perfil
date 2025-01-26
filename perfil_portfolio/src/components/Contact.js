@@ -34,7 +34,7 @@ const Contact = () => {
                             <a href="https://www.instagram.com/devfelps/" target="_blank" rel="noopener noreferrer">
                                 <FaInstagram size={30} />
                             </a>
-                            <a href="https://www.linkedin.com/in/felipe-adriano-967b89312/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/felipe-adriano-967b89312/?jobid=1234" target="_blank" rel="noopener noreferrer">
                                 <FaLinkedin size={30} />
                             </a>
                             <a href="https://github.com/DevFullFelps" target="_blank" rel="noopener noreferrer">
