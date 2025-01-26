@@ -68,7 +68,7 @@ const Navbar = () => {
 
             <section className="navbar-header">
                 <div className="navbar-image-container">
-                    <img src="../perfil_iguana.jpg" alt="Logo" className="navbar-image" />
+                    <img src="../perfil_felipe.png" alt="Logo" className="navbar-image" />
                 </div>
                 <div className="navbar-name">Felipe Adriano</div>
             </section>
