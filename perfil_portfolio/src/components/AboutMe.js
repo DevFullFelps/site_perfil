@@ -12,11 +12,11 @@ const AboutMe = () => {
             </div>
             <div className='about-me-details'>
                     <div className='about-me-text'>
-                        <h3>Eu sou <span>Felipe Adriano</span>, um desenvolvedor web | Front-end</h3>
-                        <p>Atuo no ramo da programação Front End há mais ou menos 2 anos, criando projetos próprios e buscando crescer na área, começando como freelancer e, futuramente, com um perfil profissional.</p>
+                        <h3>Sou <span>Felipe Adriano</span>, um desenvolvedor web | Front-end</h3>
+                        <p>Atuo no ramo da programação Front End há mais de 2 anos, crio projetos próprios e busco crescer na área. Trabalho como freelancer e, futuramente, com um perfil profissional.</p>
 
-                        <p>A criação de sites e seus funcionamentos sempre me fascinou e, hoje, consigo aplicar minhas ideias e soluções criativas em cada projeto.</p>
-                        <p><strong>Minha <span>paixão</span> é transformar ideias em <span>experiências digitais</span> incríveis. Busco sempre aprender e aplicar novas <span>tecnologias</span> para criar interfaces mais <span>dinâmicas</span> e <span>intuitivas</span>.</strong></p>
+                        <p>A criação de sites e seus funcionamentos sempre me fascinou. Hoje sigo aplicando ideias inovadoras e soluções criativas para atender as necessidades do público alvo</p>
+                        <p><strong>Minha <span>paixão</span> é transformar ideias em <span>experiências digitais</span> incríveis! Busco sempre aprender e aplicar novas <span>tecnologias</span> para criar interfaces mais <span>dinâmicas</span> e <span>intuitivas</span>.</strong></p>
 
                     </div>
                     <div className='about-me-table'>
