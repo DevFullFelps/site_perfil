@@ -35,6 +35,17 @@ const projectsData = [
         vercelLink: "https://goblin-site-tau.vercel.app/",
         githubLink: "https://github.com/DevFullFelps/goblin-site"
     },
+    {
+        id: 4,
+        title: "Lista Tarefas",
+        description: "Web | Front-end",
+        image: "/pasta_projetos/p_goblin2.png", // Caminho ajustado
+        creator: "Felipe Adriano",
+        technologies: "HTML, CSS, JS, Banco de Dados",
+        creationDate: "2025-01-30",
+        vercelLink: "https://goblin-site-tau.vercel.app/",
+        githubLink: "https://github.com/DevFullFelps/goblin-site"
+    },
 ];
 
 const Projects = () => {
