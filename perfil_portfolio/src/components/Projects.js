@@ -39,7 +39,7 @@ const projectsData = [
         id: 4,
         title: "Lista Tarefas",
         description: "Web | Front-end",
-        image: "/pasta_projetos/p_tabela.png", // Caminho ajustado
+        image: "/pasta_projetos/p_tabela.PNG", // Caminho ajustado
         creator: "Felipe Adriano",
         technologies: "HTML, CSS, JS, Banco de Dados",
         creationDate: "2025-01-30",
