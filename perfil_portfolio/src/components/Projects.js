@@ -43,7 +43,7 @@ const projectsData = [
         creator: "Felipe Adriano",
         technologies: "HTML, CSS, JS, Banco de Dados",
         creationDate: "2025-01-30",
-        vercelLink: "lista-tarefas-xi-lilac.vercel.app",
+        vercelLink: "https://lista-tarefas-xi-lilac.vercel.app/",
         githubLink: "https://github.com/DevFullFelps/lista_tarefas"
     },
 ];
