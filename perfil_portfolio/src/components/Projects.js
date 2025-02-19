@@ -6,7 +6,7 @@ const projectsData = [
         id: 1,
         title: "Formulário Cadastro",
         description: "Web | Front-end",
-        image: "/pasta_projetos/p_formulario2.png", // Caminho ajustado
+        image: "/pasta_projetos/p_formulario2.png", 
         creator: "Felipe Adriano",
         technologies: "HTML, CSS",
         creationDate: "2025-01-15",
@@ -17,7 +17,7 @@ const projectsData = [
         id: 2,
         title: "CETI Commerce",
         description: "Web | Front-end",
-        image: "/pasta_projetos/p_ceti2.png", // Caminho ajustado
+        image: "/pasta_projetos/p_ceti2.png", 
         creator: "Felipe Adriano",
         technologies: "HTML, CSS, JS, React",
         creationDate: "2024-10-15",
@@ -28,7 +28,7 @@ const projectsData = [
         id: 3,
         title: "Goblin COC",
         description: "Web | Front-end",
-        image: "/pasta_projetos/p_goblin2.png", // Caminho ajustado
+        image: "/pasta_projetos/p_goblin2.png", 
         creator: "Felipe Adriano",
         technologies: "HTML, CSS",
         creationDate: "2024-05-20",
@@ -39,12 +39,23 @@ const projectsData = [
         id: 4,
         title: "Lista Tarefas",
         description: "Web | Front-end",
-        image: "/pasta_projetos/p_tabela.PNG", // Caminho ajustado
+        image: "/pasta_projetos/p_tabela.PNG", 
         creator: "Felipe Adriano",
         technologies: "HTML, CSS, JS, Banco de Dados",
         creationDate: "2025-01-30",
         vercelLink: "https://lista-tarefas-xi-lilac.vercel.app/",
         githubLink: "https://github.com/DevFullFelps/lista_tarefas"
+    },
+    {
+        id: 5,
+        title: "Projeto Android",
+        description: "Web | Front-end",
+        image: "/pasta_projetos/p_android.PNG", 
+        creator: "Felipe Adriano",
+        technologies: "HTML e CSS",
+        creationDate: "2025-02-19",
+        vercelLink: "https://android-project-psi.vercel.app/",
+        githubLink: "https://github.com/DevFullFelps/android-project"
     },
 ];
 
@@ -98,7 +109,7 @@ const Projects = () => {
                             <p><strong>Data de Criação:</strong> {selectedProject.creationDate}</p>
                             <p>
                                 <strong>Links:</strong> 
-                                <a href={selectedProject.vercelLink} target="_blank" rel="noopener noreferrer">Vercel</a> | 
+                                <a href={selectedProject.vercelLink} target="_blank" rel="noopener noreferrer">Site</a> | 
                                 <a href={selectedProject.githubLink} target="_blank" rel="noopener noreferrer">GitHub</a>
                             </p>
                         </div>
