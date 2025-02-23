@@ -29,7 +29,7 @@ const AboutMe = () => {
                                  <td><span>Email:</span> devfullfelps@gmail.com</td>
                                 </tr>
                              <tr>
-                                 <td><span>Idade:</span> 22</td>
+                                 <td><span>Idade:</span> 23</td>
                                 </tr>
                          </tbody>
                         </table>
