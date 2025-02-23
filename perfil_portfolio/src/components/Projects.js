@@ -57,6 +57,17 @@ const projectsData = [
         vercelLink: "https://android-project-psi.vercel.app/",
         githubLink: "https://github.com/DevFullFelps/android-project"
     },
+    {
+        id: 6,
+        title: "Projeto Cordel",
+        description: "Web | Front-end",
+        image: "/pasta_projetos/p_cordel.PNG", 
+        creator: "Felipe Adriano",
+        technologies: "HTML e CSS",
+        creationDate: "2025-02-23",
+        vercelLink: "https://cordel-moderno-five.vercel.app/",
+        githubLink: "http://github.com/DevFullFelps/cordel-moderno"
+    },
 ];
 
 const Projects = () => {
