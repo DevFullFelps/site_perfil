@@ -2,6 +2,7 @@
 .about-me-container {
     position: relative;
     height: auto;
+    padding-left: 255px;
     min-height: 100vh;
     background-color: #090C08;
     overflow: hidden;
@@ -160,65 +161,88 @@
 }
 /* Adaptações para telas menores */
 /* Adaptações para telas menores que 1024px */
+@media (max-width: 1300px){
+    .about-me-container{
+        padding-left: 265px;
+
+    }
+}
+
+/* 1024px ↓ */
 @media (max-width: 1024px) {
     .about-me-container {
-        padding-left: 20px; /* Reduz o espaçamento em telas menores */
-        padding-top: 80px; /* Ajusta o espaçamento superior */
+        padding-left: 260px;
+        padding-top: 80px;
     }
 
     .about-me-details {
-        flex-direction: column; /* Empilha os elementos verticalmente */
+        flex-direction: column;
         text-align: center;
-        margin-top: 20px; /* Ajusta o espaçamento entre os elementos */
+        margin-top: 20px;
     }
 
     .about-me-details h3 {
-        font-size: 20px; /* Ajusta o tamanho do texto */
-        margin-right: 0; /* Remove o espaço à direita */
+        font-size: 20px;
+        margin-right: 0;
     }
 
     .about-me-table {
         margin-left: 0;
-        margin-right: 0; /* Garantir que a tabela ocupe toda a largura */
-        max-width: 100%; /* Ajusta a tabela para a largura total */
-        width: 100%; /* Garantir que a tabela ocupe a tela inteira */
+        margin-right: 0;
+        max-width: 100%;
+        width: 100%;
     }
 
     .about-me-table tr {
-        width: 100%; /* Ajuste a largura para 100% */
-        display: block; /* Cada linha fica em uma linha separada */
+        width: 100%;
+        display: block;
     }
 
     .about-me-table td {
-        width: 100%; /* As células ocupam 100% da largura */
-        padding: 10px 0; /* Ajuste o espaçamento das células */
-        text-align: center; /* Centraliza o conteúdo nas células */
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
     }
 
     .about-me-title {
-        font-size: 28px; /* Ajusta o tamanho da fonte */
+        font-size: 28px;
     }
 
     .about-me-hidden-title {
-        font-size: 80px; /* Reduz o tamanho do título de fundo */
+        font-size: 80px;
     }
 
     .about-me-table button {
-        width: 100%; /* Botão ocupa toda a largura */
-        padding: 12px 0; /* Ajusta o espaçamento dentro do botão */
+        width: 100%;
+        padding: 12px 0;
     }
 }
 
-/* Adaptações para telas menores que 768px (smartphones) */
+/* 900px ↓ */
+@media (max-width: 900px) {
+    .about-me-title {
+        font-size: 26px;
+    }
+
+    .about-me-hidden-title {
+        font-size: 70px;
+    }
+
+    .about-me-details p {
+        font-size: 15px;
+    }
+}
+
+/* 768px ↓ */
 @media (max-width: 769px) {
     .about-me-container {
-        padding-left: 10px; /* Menos padding para telas pequenas */
-        padding-top: 60px; /* Ajuste no padding superior */
+        padding-left: 10px;
+        padding-top: 60px;
     }
 
     .about-me-details {
-        flex-direction: column; /* Empilha os itens */
-        text-align: center; /* Centraliza o conteúdo */
+        flex-direction: column;
+        text-align: center;
     }
 
     .about-me-table {
@@ -227,12 +251,108 @@
     }
 
     .about-me-table td {
-        padding: 12px; /* Mais espaçamento nas células */
+        padding: 12px;
         text-align: center;
     }
 
     .about-me-table button {
-        width: 100%; /* O botão ocupa toda a largura */
-        padding: 12px 0; /* Ajusta o espaçamento do botão */
+        width: 100%;
+        padding: 12px 0;
+    }
+}
+
+/* 600px ↓ */
+@media (max-width: 600px) {
+    .about-me-title {
+        font-size: 24px;
+    }
+
+    .about-me-hidden-title {
+        font-size: 55px;
+    }
+
+    .about-me-details h3 {
+        font-size: 18px;
+    }
+
+    .about-me-details p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+
+/* 480px ↓ */
+@media (max-width: 480px) {
+    .about-me-container {
+        padding-top: 40px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .about-me-title {
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+
+    .about-me-hidden-title {
+        font-size: 45px;
+        opacity: 0.12;
+    }
+
+    .about-me-details h3 {
+        font-size: 17px;
+    }
+
+    .about-me-details p {
+        font-size: 13px;
+        margin-top: 15px;
+    }
+
+    .about-me-table td {
+        font-size: 14px;
+    }
+
+    .about-me-table .whatsapp-button {
+        font-size: 11px;
+        padding: 10px 0;
+    }
+}
+
+/* 390px ↓ */
+@media (max-width: 390px) {
+    .about-me-title {
+        font-size: 20px;
+    }
+
+    .about-me-hidden-title {
+        font-size: 38px;
+    }
+
+    .about-me-details p {
+        font-size: 12.5px;
+    }
+
+    .about-me-table td {
+        padding: 10px 0;
+        font-size: 13px;
+    }
+}
+
+/* 360px ↓ */
+@media (max-width: 360px) {
+    .about-me-title {
+        font-size: 18px;
+    }
+
+    .about-me-hidden-title {
+        font-size: 34px;
+    }
+
+    .about-me-details p {
+        font-size: 12px;
+    }
+
+    .about-me-table td {
+        padding: 8px 0;
     }
 }

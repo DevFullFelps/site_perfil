@@ -11,32 +11,36 @@ const AboutMe = () => {
                 </div>
             </div>
             <div className='about-me-details'>
-                    <div className='about-me-text'>
-                        <h3>Sou <span>Felipe Adriano</span>, um desenvolvedor web | Front-end</h3>
-                        <p>Atuo no ramo da programação Front End há mais de 2 anos, crio projetos próprios e busco crescer na área. Trabalho como freelancer e, futuramente, com um perfil profissional.</p>
+                <div className='about-me-text'>
+                    <h3>Sou <span>Felipe Adriano</span>, Desenvolvedor <span>Full-Stack</span></h3>
 
-                        <p>A criação de sites e seus funcionamentos sempre me fascinou. Hoje sigo aplicando ideias inovadoras e soluções criativas para atender as necessidades do público alvo</p>
-                        <p><strong>Minha <span>paixão</span> é transformar ideias em <span>experiências digitais</span> incríveis! Busco sempre aprender e aplicar novas <span>tecnologias</span> para criar interfaces mais <span>dinâmicas</span> e <span>intuitivas</span>.</strong></p>
+                    <p>Sou desenvolvedor apaixonado por <span>tecnologia</span> e pela criação de <span>soluções</span> que conectam pessoas, processos e resultados. Atuo no desenvolvimento de <span>aplicações web</span>, unindo front-end e back-end para entregar sistemas funcionais, modernos e bem estruturados.</p>
 
-                    </div>
-                    <div className='about-me-table'>
-                        <table>
-                            <tbody>
-                             <tr>
-                                    <td><span>Nome:</span> Felipe Adriano</td>
-                                </tr>
-                                <tr>
-                                 <td><span>Email:</span> devfullfelps@gmail.com</td>
-                                </tr>
-                             <tr>
-                                 <td><span>Idade:</span> 23</td>
-                                </tr>
-                         </tbody>
-                        </table>
-                        <a className='whatsapp-button' href="https://wa.me/47984318419?text=Olá,                 %20gostaria%20de%20falar%20com%20Felipe%20Adriano!" target="_blank" rel="noopener noreferrer">Enviar via WhatsApp</a>
-                    </div>
+                    <p>Tenho experiência na criação de <span>interfaces responsivas</span> e na construção de funcionalidades sólidas no <span>back-end</span>, sempre buscando <span>clareza</span>, <span>desempenho</span> e <span>qualidade</span> no código.</p>
+
+                    <p><strong>Acredito no poder da <span>tecnologia</span> para transformar ideias em <span>experiências digitais</span> marcantes — e sigo evoluindo continuamente, aprendendo novas <span>ferramentas</span> e explorando soluções <span>criativas</span> que geram <span>valor real</span>.</strong></p>
+
+
+
                 </div>
-                
+                <div className='about-me-table'>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><span>Nome:</span> Felipe Adriano</td>
+                            </tr>
+                            <tr>
+                                <td><span>Email:</span> devfullfelps@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td><span>Idade:</span> 23</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a className='whatsapp-button' href="https://wa.me/47984318419?text=Olá,                 %20gostaria%20de%20falar%20com%20Felipe%20Adriano!" target="_blank" rel="noopener noreferrer">Enviar via WhatsApp</a>
+                </div>
+            </div>
+
         </div>
     );
 };

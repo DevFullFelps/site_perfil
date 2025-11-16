@@ -17,7 +17,7 @@ const HeroSection = () => {
                 <h1 className='hero-title'>
                     <Typewriter
                         options={{
-                            strings: ['Desenvolvedor WEB | Front-End'],
+                            strings: ['Desenvolvedor | Full-Stack'],
                             autoStart: true,
                             loop: true,
                             deleteSpeed: 50, // Velocidade ao apagar

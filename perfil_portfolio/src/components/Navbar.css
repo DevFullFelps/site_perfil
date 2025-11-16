@@ -240,6 +240,7 @@
   height: 60px;
 }
 
+
 @media (min-width: 769px) {
   .dropdown-menu, .hamburger {
     display: none;
