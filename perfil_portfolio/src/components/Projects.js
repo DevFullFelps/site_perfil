@@ -74,10 +74,21 @@ const projectsData = [
     description: "Web | Front-end",
     image: "/pasta_projetos/p_pizza.PNG",
     creator: "Felipe Adriano",
-    technologies: "HTML e CSS / Atualmente, somente para telas maiores",
+    technologies: "HTML e CSS",
     creationDate: "2025-07-15",
     vercelLink: "https://tutty-pizza.vercel.app/",
     githubLink: "https://github.com/DevFullFelps/tutty_pizza",
+  },
+   {
+    id: 8,
+    title: "Cadastro Matéria-Prima",
+    description: "Web | Full-stack",
+    image: "/pasta_projetos/p_cadastro.PNG",
+    creator: "Felipe Adriano",
+    technologies: "HTML, CSS, Python e Banco de Dados",
+    creationDate: "2026-04-30",
+    vercelLink: "https://cadastro-metalurgica.onrender.com/",
+    githubLink: "https://github.com/DevFullFelps/py_cadastro_metal",
   },
 ];
 
