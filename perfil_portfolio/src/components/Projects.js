@@ -90,6 +90,17 @@ const projectsData = [
     vercelLink: "https://cadastro-metalurgica.onrender.com/",
     githubLink: "https://github.com/DevFullFelps/py_cadastro_metal",
   },
+    {
+    id: 9,
+    title: "Cardápio WEB",
+    description: "Web | Full-stack",
+    image: "/pasta_projetos/p_cardapio.PNG",
+    creator: "Felipe Adriano",
+    technologies: "HTML, CSS, JS, Python e Banco de Dados",
+    creationDate: "2026-06-16",
+    vercelLink: "https://front-prototipo-cardapio.vercel.app/",
+    githubLink: "https://github.com/DevFullFelps/front_prototipo_cardapio",
+  },
 ];
 
 const Projects = () => {
